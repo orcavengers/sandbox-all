@@ -65,7 +65,7 @@ Sandbox.define('/v1/aggregates/50000/data/{orgUnitId}','GET', function(req, res)
 });
 
 //Course Access aggregation
-Sandbox.define('/v1/aggregates/200/data/{orgId}/Course Offering','GET', function(req, res) {
+Sandbox.define('/v1/aggregates/409/data/{orgId}/Course Offering','GET', function(req, res) {
     var dates = utils.parseDates(req.query.startTime, req.query.endTime);
     
     var result = generateCourseAccessData(req.params.orgId, undefined, dates.startTime, dates.endTime);
