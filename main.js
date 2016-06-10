@@ -43,7 +43,7 @@ Sandbox.define('/v1/aggregates/30000/data/{orgUnitId}','GET', function(req, res)
 });
 
 // Threads started
-Sandbox.define('/v1/aggregates/406/data/{orgUnitId}','GET', function(req, res) {
+Sandbox.define('/v1/aggregates/405/data/{orgUnitId}','GET', function(req, res) {
     var dates = utils.parseDates(req.query.startTime, req.query.endTime);
     
     var result = generateDiscussionsData(req.params.orgUnitId, dates.startTime, dates.endTime);
@@ -54,7 +54,7 @@ Sandbox.define('/v1/aggregates/406/data/{orgUnitId}','GET', function(req, res) {
 });
 
 // Posts replied to
-Sandbox.define('/v1/aggregates/405/data/{orgUnitId}','GET', function(req, res) {
+Sandbox.define('/v1/aggregates/406/data/{orgUnitId}','GET', function(req, res) {
     var dates = utils.parseDates(req.query.startTime, req.query.endTime);
     
     var result = generateDiscussionsData(req.params.orgUnitId, dates.startTime, dates.endTime);
